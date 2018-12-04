@@ -8,7 +8,10 @@ body {
     background-color: #28343a !important;
     width: 100%;
     height: 60px;
+    top: 0%;
+    z-index: 10 !important;
     position: fixed !important;
+    margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #header-icon {
@@ -52,8 +55,8 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
 }
-.card, .panel{
-    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; */
+.myCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .mysidenav div div {
@@ -79,6 +82,10 @@ body {
 
 .myContainer div table thead tr th {
     text-align: center;
+}
+
+.myContainer div table thead {
+    background-color: #eaeaea;
 }
 
 .mysidenav div div:hover{

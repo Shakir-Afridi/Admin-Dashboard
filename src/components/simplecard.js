@@ -24,9 +24,9 @@ class SimpleCard extends Component{
         } else if (renderComp === 'Dashboard'){
             compToRender = <DashBoard />
             childNav = ''
-        } else if (renderComp === 'Inbox'){
+        } else if (renderComp === 'Profile'){
             childNav = ''
-            compToRender = <h1>Inbox</h1>
+            compToRender = <h1>Profile</h1>
         } else{
             if (childNav == 'Line Graph'){
                 compToRender = <h1>Line Graph</h1>

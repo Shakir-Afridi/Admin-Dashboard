@@ -121,7 +121,7 @@ class Header extends Component{
                     var ele = document.getElementsByClassName("fa-table");
                     ele[0].classList.add("activeNavItem");
                     document.getElementsByClassName("childSideNav")[0].style.display = 'none'
-                } else if(e.target.id === 'Inbox'){
+                } else if(e.target.id === 'Profile'){
                     var ele = document.getElementsByClassName("fa-envelope");
                     ele[0].classList.add("activeNavItem");
                     document.getElementsByClassName("childSideNav")[0].style.display = 'none'
@@ -194,8 +194,8 @@ class Header extends Component{
                                     <span id="line-chart" style={{marginLeft: '16px', fontFamily: 'Verdana'}}>Line Graph </span>
                                 </div>
                             </span>
-                            <div className="span fa fa-envelope" onClick={(e)=>{this.navItemClicked(e); this.renderComponent('Inbox')}}>
-                                <span style={{marginLeft: '18px', fontFamily: 'Verdana'}} id="Inbox">Inbox</span>
+                            <div className="span fa fa-envelope" onClick={(e)=>{this.navItemClicked(e); this.renderComponent('Profile')}}>
+                                <span style={{marginLeft: '18px', fontFamily: 'Verdana'}} id="Profile">Profile</span>
                             </div>
                         </div>
                     </div>
