@@ -13,52 +13,52 @@ class SampleTable extends Component {
                     <th>Firstname</th>
                     <th>Lastname</th>
                     <th>Email</th>
-                    <th>Lastname</th>
-                    <th>Email</th>
+                    <th>Occupation</th>
+                    <th>address</th>
                 </tr>
                 </thead>
                 <tbody style={{textAlign: 'center'}}>
                 <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
+                    <td>Ahmad</td>
+                    <td>Ali</td>
+                    <td>ahmad@gmail.com</td>
+                    <td>Teacher</td>
+                    <td>Some address</td>
                 </tr>
                 <tr>
-                    <td>Mary</td>
-                    <td>Moe</td>
-                    <td>mary@example.com</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
+                    <td>Waqar</td>
+                    <td>Younis</td>
+                    <td>Waqar@gmail.com</td>
+                    <td>Teacher</td>
+                    <td>Some address</td>
                 </tr>
                 <tr>
-                    <td>July</td>
-                    <td>Dooley</td>
-                    <td>july@example.com</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
+                    <td>Zaka</td>
+                    <td>Ullah</td>
+                    <td>zaka@gmail.com</td>
+                    <td>Teacher</td>
+                    <td>Some address</td>
                 </tr>
                 <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
+                    <td>Ali</td>
+                    <td>Ahmad</td>
+                    <td>ali@gmail.com</td>
+                    <td>Teacher</td>
+                    <td>Some address</td>
                 </tr>
                 <tr>
-                    <td>Mary</td>
-                    <td>Moe</td>
-                    <td>mary@example.com</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
+                    <td>Ghufran</td>
+                    <td>ali</td>
+                    <td>ghufran@gmail.com</td>
+                    <td>Teacher</td>
+                    <td>Some address</td>
                 </tr>
                 <tr>
-                    <td>July</td>
-                    <td>Dooley</td>
-                    <td>july@example.com</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
+                    <td>Awais</td>
+                    <td>Ahmad</td>
+                    <td>awais@gmail.com</td>
+                    <td>Teacher</td>
+                    <td>Some address</td>
                 </tr>
                 </tbody>
             </table>
