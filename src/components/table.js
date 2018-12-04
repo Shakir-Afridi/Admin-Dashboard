@@ -6,28 +6,61 @@ class SampleTable extends Component {
     render(){
         return(
             <div className="myContainer">
-            <div className="table-responsive centered">          
-            <table className="table">
-              <thead>
+            <div className="table-responsive">          
+            <table className="table table-hover" style={{tableLayout: 'auto'}} >
+                <thead>
                 <tr>
-                  <th>#</th>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Age</th>
-                  <th>City</th>
-                  <th>Country</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
                 </tr>
-              </thead>
-              <tbody>
+                </thead>
+                <tbody style={{textAlign: 'center'}}>
                 <tr>
-                  <td>1</td>
-                  <td>Anna</td>
-                  <td>Pitt</td>
-                  <td>35</td>
-                  <td>New York</td>
-                  <td>USA</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
                 </tr>
-              </tbody>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                </tbody>
             </table>
             </div>
             </div>

@@ -77,6 +77,10 @@ body {
     display: none;
 }
 
+.myContainer div table thead tr th {
+    text-align: center;
+}
+
 .mysidenav div div:hover{
     background-color: #1f3944;
     color: #838383;
