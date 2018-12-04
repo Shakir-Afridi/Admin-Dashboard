@@ -1,85 +1,59 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 
 // components 
 import SampleTable from '../components/table';
 import DashBoard from '../components/dashboard';
 
-const styles = theme => ({
-  card: {
-    // backgroundColor: '#8B9292',
-    minWidth: 420,
-    // overflow: 'auto',
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  title: {
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
-  },
-
-  root: {
-    width: '100%',
-    marginTop: theme.spacing.unit * 3,
-    overflowX: 'auto',
-  },
-  table: {
-    minWidth: 200,
-  },
-});
-
-
 class SimpleCard extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+        };
+    }
 
     renderComponent (compName) {
-        console.log('compName', compName)
-        
+        console.log('compName', compName)   
     }
 
     render(){
-        const { classes, renderComp } = this.props;
+        let { renderComp, childNav } = this.props;
         let compToRender;
         if (renderComp === 'Table') {
             compToRender = <SampleTable />
+            childNav = ''
         } else if (renderComp === 'Dashboard'){
             compToRender = <DashBoard />
+            childNav = ''
         } else if (renderComp === 'Inbox'){
-            compToRender = <div>Inbox</div>
+            childNav = ''
+            compToRender = <h1>Inbox</h1>
         } else{
-            compToRender = <div>Mail</div>
+            if (childNav == 'Line Graph'){
+                compToRender = <h1>Line Graph</h1>
+            } else{
+                compToRender = <h1>Bar Graph</h1>
+            }
         }
         return (
-            // <Card className={classes.card}>
-                // <CardContent>
-                <div>
-                    {compToRender}
+            <div id="mainBodyComp" style={{marginLeft: "46px", marginRight: "5px", color: 'black'}}>
+                <div className="panel panel-default">
+                    <div className="panel-body"> </div>
                 </div>
-                // </CardContent>
-            // </Card>
+                <ul className="breadcrumb" style={{textAlign: 'right', marginTop: "45px"}}>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">{renderComp}</a></li>
+                    <li>{childNav}</li>
+                </ul>
+                
+                <div className="panel panel-default">
+                    <div className="panel-body">
+                        {compToRender}
+                     </div>
+                </div>
+            </div>
         );
     }
 }
 
-SimpleCard.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
 
-export default withStyles(styles)(SimpleCard);
+export default SimpleCard;

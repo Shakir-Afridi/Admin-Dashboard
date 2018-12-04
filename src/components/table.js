@@ -1,98 +1,41 @@
 
 import React, { Component } from 'react';
-import ArrowDropDown from '@material-ui/icons/ArrowDropDown'
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import TablePagination from '@material-ui/core/TablePagination';
-import Paper from '@material-ui/core/Paper';
-import $ from 'jquery';
-
-const styles = theme => ({
-    card: {
-      // backgroundColor: '#8B9292',
-      minWidth: 370,
-    },
-});
 
 class SampleTable extends Component {
     
-    componentDidMount(){
-    //     $(document).ready(function () {
-    //         $('#dtBasicExample').DataTable();
-    //         $('.dataTables_length').addClass('bs-select');
-    //       });
-    }
     render(){
-
-        const { classes } = this.props
         return(
-            <Paper className={classes.root}>
-          {/* responsive-table and striped bordered className can also be added */}
-          <table className="table centered highlight table-fixed responsive-table table-bordered table-sm" id="dtBasicExample" cellspacing="0" width="100%"> 
-            <thead>
-            <tr>
-                {/* <th></th> */}
-                <th class="th-sm">Name</th>
-                <th class="th-sm">Item Name</th>
-                <th class="th-sm">Item Price</th>
-                <th class="th-sm">Item Name</th>
-                <th class="th-sm">Item Price</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <tr>
-                {/* <td><ArrowDropDown /></td> */}
-                <td>Ali</td>
-                <td>Item</td>
-                <td>$12.87</td>
-                <td>Item</td>
-                <td>$89.87</td>
-            </tr>
-            <tr>
-                {/* <td><ArrowDropDown /></td> */}
-                <td>Ahmad</td>
-                <td>Item1</td>
-                <td>$32.76</td>
-                <td>Item1</td>
-                <td>$34.90</td>
-            </tr>
-            <tr>
-                {/* <td><ArrowDropDown /></td> */}
-                <td>Ghufran</td>
-                <td>Item2</td>
-                <td>$2.00</td>
-                <td>Item2</td>
-                <td>$9.90</td>
-            </tr>
-            <tr>
-                <td>Ashfaq</td>
-                <td>Item3</td>
-                <td>$2.00</td>
-                <td>Item3</td>
-                <td>$9.90</td>
-            </tr>
-            <tr>
-                <td>Awais</td>
-                <td>Item4</td>
-                <td>$2.00</td>
-                <td>Item</td>
-                <td>$9.90</td>
-            </tr>
-            </tbody>
-        </table>
-        </Paper>
+            <div className="myContainer">
+            <div className="table-responsive centered">          
+            <table className="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Age</th>
+                  <th>City</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Anna</td>
+                  <td>Pitt</td>
+                  <td>35</td>
+                  <td>New York</td>
+                  <td>USA</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            </div>
         )
     }
 }
-
-SampleTable.propTypes = {
-    classes: PropTypes.object.isRequired,
-  };
   
-export default withStyles(styles)(SampleTable);
+export default SampleTable;
 
 
 

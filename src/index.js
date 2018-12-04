@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'materialize-css/dist/css/materialize.min.css';
+// import 'materialize-css/dist/css/materialize.min.css';
 import { BrowserRouter, Route } from 'react-router-dom';
-import 'materialize-css';
 
 // components
-import Header from './components/header';
+import Header from './components/sidebar';
 import Footer from './components/footer';
 import login from './components/login';
 import signup from './components/singup';
@@ -15,7 +14,7 @@ import drawer from './components/drawer';
 // import Background from './assets/images/phone.jpg';
 
 // import SideNavPage from './components/sidebar';
-import SideNavPage from './components/sidebar';
+import Main from './components/main';
 
 var sectionStyle = {
     width: "100%",
@@ -28,11 +27,11 @@ const App = () => {
     return (
         <BrowserRouter>
         <div style={sectionStyle}>
-            <Route exact path='/sidenav' component={SideNavPage}></Route>
+            <Route exact path='/sidenav' component={Main}></Route>
             <Route exact path='/' component={login}></Route>
-            {/* <Route exact path='/signup' component={signup}></Route>
-            <Route exact path='/dashboard' component={dashboard}></Route>
-            <Route exact path='/drawer' component={drawer}></Route> */}
+            {/* <Route exact path='/signup' component={signup}></Route> */}
+            {/* <Route exact path='/dashboard' component={dashboard}></Route> */}
+            <Route exact path='/drawer' component={drawer}></Route>
         </div>
     </BrowserRouter>
     )

@@ -120,7 +120,7 @@ class ResponsiveDrawer extends React.Component {
             </ListItem>
             <ListItem button key={'Mail'} style={{height: '45px'}}  onClick={() => this.renderComponent('Mail')}>
               <ListItemIcon style={{color: '#F8F9F9'}}>  <MailIcon /> </ListItemIcon>
-              <ListItemIcon style={{color: '#F8F9F9'}}> <text>Mail</text></ListItemIcon>
+              <ListItemIcon style={{color: '#F8F9F9'}}> <text>Graph</text></ListItemIcon>
             </ListItem>
         </List>
       </div>
