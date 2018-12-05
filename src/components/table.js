@@ -2,6 +2,11 @@
 import React, { Component } from 'react';
 
 class SampleTable extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+        }
+    }
     
     render(){
         return(
@@ -22,7 +27,7 @@ class SampleTable extends Component {
                                     <th>address</th>
                                 </tr>
                                 </thead>
-                                <tbody style={{textAlign: 'center'}}>
+                                <tbody>
                                 <tr>
                                     <td>Ahmad</td>
                                     <td>Ali</td>
@@ -88,7 +93,7 @@ class SampleTable extends Component {
                                     <th>address</th>
                                 </tr>
                                 </thead>
-                                <tbody style={{textAlign: 'center'}}>
+                                <tbody>
                                 <tr>
                                     <td>Ahmad</td>
                                     <td>Ali</td>
@@ -141,17 +146,17 @@ class SampleTable extends Component {
             <div className="panel panel-default">
                 <div className="panel-body">
                     <div className="myContainer">
-                        <h3 style={{textAlign: 'center'}}>Responsive Striped Table</h3>
+                        <h3 style={{textAlign: 'center'}}>Responsive Striped and centered Table</h3>
                         <hr/>
                         <div className="table-responsive">          
                             <table className="table table-striped" style={{tableLayout: 'auto'}} >
                                 <thead>
                                 <tr>
-                                    <th>Firstname</th>
-                                    <th>Lastname</th>
-                                    <th>Email</th>
-                                    <th>Occupation</th>
-                                    <th>address</th>
+                                    <th style={{textAlign: 'center'}}>Firstname</th>
+                                    <th style={{textAlign: 'center'}}>Lastname</th>
+                                    <th style={{textAlign: 'center'}}>Email</th>
+                                    <th style={{textAlign: 'center'}}>Occupation</th>
+                                    <th style={{textAlign: 'center'}}>address</th>
                                 </tr>
                                 </thead>
                                 <tbody style={{textAlign: 'center'}}>
@@ -199,6 +204,13 @@ class SampleTable extends Component {
                                 </tr>
                                 </tbody>
                             </table>
+                            {/* <div>
+                            <hr/>
+                            <ul className="pager" style={{float: 'right'}}>
+                                <li><a href="#">Previous</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                            </div> */}
                         </div>
                     </div>
                 </div>

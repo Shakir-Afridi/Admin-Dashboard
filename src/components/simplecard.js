@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // components 
 import SampleTable from '../components/table';
 import DashBoard from '../components/dashboard';
+import Profile from '../components/profile';
 
 class SimpleCard extends Component{
     constructor(props) {
@@ -25,8 +26,8 @@ class SimpleCard extends Component{
             compToRender = <DashBoard />
             childNav = ''
         } else if (renderComp === 'Profile'){
+            compToRender = <Profile />
             childNav = ''
-            compToRender = <h1>Profile</h1>
         } else{
             if (childNav == 'Line Graph'){
                 compToRender = <h1>Line Graph</h1>

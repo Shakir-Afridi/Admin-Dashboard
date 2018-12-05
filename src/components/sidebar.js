@@ -1,8 +1,9 @@
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 
 import React, { Component } from 'react';
 import { createBrowserHistory } from 'history';
 import _ from 'lodash';
+
 
 import SimpleCard from './simplecard'
 
@@ -122,7 +123,7 @@ class Header extends Component{
                     ele[0].classList.add("activeNavItem");
                     document.getElementsByClassName("childSideNav")[0].style.display = 'none'
                 } else if(e.target.id === 'Profile'){
-                    var ele = document.getElementsByClassName("fa-envelope");
+                    var ele = document.getElementsByClassName("fa fa-user");
                     ele[0].classList.add("activeNavItem");
                     document.getElementsByClassName("childSideNav")[0].style.display = 'none'
                 } else if(e.target.id === 'Graph'){
@@ -164,7 +165,10 @@ class Header extends Component{
                             <a style={{color: 'white'}}><span onClick={this.openNav} style={{marginTop: "14px"}} className="left fa fa-bars" aria-hidden="true"></span></a>
                             : <span style={{marginTop: "14px", color: 'white'}} href="javascript:void(0)" onClick={this.closeNav} className="left fa fa-close" aria-hidden="true"></span>
                         }
-                        <div className="logoutBtn" onClick={this.logout}>Logout</div>
+                        <div className="logoutBtn"> 
+                            {/* <a style={{color: 'white'}} className="fa fa-bell" href="#" title="Hedaer" data-toggle="popover" data-placement="left" data-content="Content"></a> */}
+                            <div className="fa fa-sign-out" onClick={this.logout}>Logout</div>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -194,7 +198,7 @@ class Header extends Component{
                                     <span id="line-chart" style={{marginLeft: '16px', fontFamily: 'Verdana'}}>Line Graph </span>
                                 </div>
                             </span>
-                            <div className="span fa fa-envelope" onClick={(e)=>{this.navItemClicked(e); this.renderComponent('Profile')}}>
+                            <div className="span fa fa-user" onClick={(e)=>{this.navItemClicked(e); this.renderComponent('Profile')}}>
                                 <span style={{marginLeft: '18px', fontFamily: 'Verdana'}} id="Profile">Profile</span>
                             </div>
                         </div>

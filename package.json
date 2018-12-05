@@ -17,6 +17,7 @@
     "materialize-css": "^1.0.0-rc.2",
     "mdbreact": "^4.8.4",
     "react": "^16.6.3",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-bootstrap": "^0.32.4",
     "react-bootstrap-sidebar": "0.0.1",
     "react-data-components": "^1.2.0",
