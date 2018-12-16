@@ -1,42 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import 'materialize-css/dist/css/materialize.min.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 
-// components
-import Header from './components/sidebar';
-import Footer from './components/footer';
-import login from './components/login';
-import signup from './components/singup';
-import dashboard from './components/dashboard';
-import drawer from './components/drawer';
+import redusers from './reducers';
 
-// import Background from './assets/images/phone.jpg';
+import App from './App';
 
-// import SideNavPage from './components/sidebar';
-import Main from './components/main';
-
-var sectionStyle = {
-    width: "100%",
-    // height: window.innerHeight + "px",
-    // backgroundImage: "url(" + Background + ")",
-    // backgroundColor: "#E5E7E9",
-    backgroundSize: 'cover',
-  };
-const App = () => {
-    return (
-        <BrowserRouter>
-        <div style={sectionStyle}>
-            <Route exact path='/sidenav' component={Main}></Route>
-            <Route exact path='/' component={login}></Route>
-            {/* <Route exact path='/signup' component={signup}></Route> */}
-            {/* <Route exact path='/dashboard' component={dashboard}></Route> */}
-            <Route exact path='/drawer' component={drawer}></Route>
-        </div>
-    </BrowserRouter>
-    )
-} 
+const createStoreWithMiddleware = applyMiddleware(thunk)(createStore)
 
 ReactDOM.render(
-    <App />
+    <Provider store={createStoreWithMiddleware(redusers)}>
+        <App />
+    </Provider>
     , document.querySelector('#root'))

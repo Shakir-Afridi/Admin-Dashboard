@@ -1,0 +1,326 @@
+body{
+    background-color: #eee !important; 
+  }
+
+  /* Header styling */
+  .myHeader {
+    background-color: #28343a !important;
+    width: 100%;
+    height: 60px;
+    top: 0%;
+    z-index: 1000 !important;
+    position: fixed !important;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #header-icon {
+    transition: margin-left .5s;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: -25px;
+  }
+  
+  .logoutBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 18px !important;
+    margin-top: 20px;
+    margin-right: 14px;
+    color: #f1f1f1;
+}
+
+/* Sidenav styling */
+.mysidenav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    width: 280px;
+    top: 0%;
+    position: fixed;
+    background-color: #28343a;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.mysidenav ul li{
+    padding: 8px 8px 8px 18px;
+    margin-left: -40px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: margin-left .5s;
+    cursor: pointer;
+    color: #ffffff !important;
+    line-height: 180%;
+    display: block;
+}
+
+#SideNavClose ul li{
+  padding: 8px 8px 8px 12px;
+  margin-left: -40px;
+  text-decoration: none;
+  font-size: 16px;
+  align-content: flex-start;
+  transition: margin-left .5s;
+  cursor: pointer;
+  color: #ffffff !important;
+  line-height: 120%;
+  display: block;
+}
+
+.myCard {
+  border-radius: 5px;
+  box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+  /* transition: all .2s ease-in-out; */
+}
+
+.myCard:hover {
+  /* transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+}
+
+.mysidenav ul li a, #SideNavClose ul li a {
+  color: #fff;
+  padding-left: 26px;
+  font-family: Verdana;
+  text-decoration: none;
+}
+
+.mysidenav ul li:hover, #SideNavClose ul li:hover{
+    background-color: #17202A;
+    color: #838383;
+    border-radius: 5px;
+    padding-left: 10px;
+    border-left: 8px solid rgb(124, 126, 51);
+    border-right: 8px solid rgb(124, 126, 51);
+    transition: 0.5s;
+}
+
+.mysidenav ul li.active, #SideNavClose ul li.active{
+  background-color: #17202A !important;
+  border-left: 8px solid rgb(124, 126, 51) !important;
+  border-right: 8px solid rgb(124, 126, 51) !important;
+  transition: 0.5s !important;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.childClicked{
+  background-color: #1f3944;
+  color: #838383;
+  border-left: 8px solid rgb(124, 126, 51);
+}
+
+#SideNavClose {
+  background-color: #28343a;
+  width: 100%;
+  display: block;
+  height: 0px;
+  padding-top: 40px;
+  transition: 0.6s;
+}
+
+#logoutbtnClose {
+  padding: 8px 8px 8px 12px;
+  text-decoration: none;
+  height: 30px;
+  margin: auto;
+  font-size: 16px;
+  color: white;
+  padding-right: 10px;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#logoutbtnClose:hover {
+  cursor: pointer;
+}
+
+#ChildNavClose {
+  height: 40px;
+  transition: height 0.6s;
+}
+
+#ChildNavClose label {
+  font-family: Verdana !important;
+}
+
+#ChildNavClose span {
+  padding: 18px 12px 4px 12px;
+  padding-left: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+#ChildNavClose span:hover {
+    color: #fff;
+}
+
+#SideNavClose ul li {
+  cursor: pointer;
+  padding: 10px 10px 10px 12px;
+  text-decoration: none;
+  opacity: 0;
+  font-size: 18px;
+  visibility: hidden;
+  transition: opacity 0.6s, visibility 0.6s;
+  display: block;
+}
+
+#mainBodyComp {
+    background-color: transparent !important;
+    margin-left: 295px;
+    transition: margin-left .5s;
+    margin-right: 15px;
+    margin-top: 80px !important;
+  }
+
+.dashboard {
+  margin-left: 90px !important;
+  margin-top: 20px;
+  width: 90%;
+}
+
+/* profile */
+.profileCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 380px;
+    margin: auto;
+    background-color: #fff !important;
+    border-radius: 5px !important;
+    text-align: center;
+    font-family: arial;
+  }
+  
+.profileTitle {
+    color: grey;
+    font-size: 18px;
+  }
+  
+.profile-contact-btn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #1f3944;
+    text-align: center;
+    cursor: pointer;
+    width: 40%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+  
+  .profile-links {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  .profile-contact-btn:hover, .profile-links a:hover {
+    opacity: 0.8;
+  }
+
+  .profile-card-body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important ;
+  }
+
+  /* for text input */
+  .inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 39px;
+  }
+
+  .mylabel {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    font-size: 16px;
+    color: #838383;
+    font-weight: 500;
+    transform-origin: 0 0;
+    transition: all .2s ease
+  }
+
+  .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #0077FF;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all .15s ease;
+ }
+
+ #inp {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 4px 0;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 2px solid #838383;
+    background: none;
+    border-radius: 0;
+    transition: all .15s ease;
+ }
+
+
+#inp:not(:placeholder-shown) + span{
+    transform: translateY(-16px) scale(.75);
+}
+#inp:focus{
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #0077FF;
+}
+#inp:focus + span{
+    color: #0077FF;
+    transform: translateY(-16px) scale(.75);
+}
+#inp:focus + span + .border{
+    transform: scaleX(1)
+}
+
+.bars {
+  margin-top: 20px !important;
+  transition: margin-left .5s;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .mysidenav {width: 0px;}
+  #mainBodyComp {
+      margin-left: 20px;
+      margin-top: 30px !important;
+    }
+  #header-icon {
+      margin-left: 14px;
+  }
+  #Logo {
+      display: none;
+  }
+  .profileCard {
+    width: 100% !important;
+  }
+  .bars {
+    display: inline;
+  }
+}
+
+/* footer styleing */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #28343a;
+  color: white;
+  text-align: center;
+}
