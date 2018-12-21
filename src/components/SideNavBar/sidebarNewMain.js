@@ -27,7 +27,7 @@ class Nav extends Component{
         this.setState({width: $(window).width()});
         // when dimension change retain the current state
         let comp = this.props.renderComponent
-        if (self.state.width <= 600){
+        if (self.state.width <= 768){
             $("#SideNavClose li").removeClass("active");
             $(`#${comp}`).parent().addClass("active");
             $('#SideNavBars').css("display", "none")
@@ -54,7 +54,7 @@ class Nav extends Component{
 
     render () {
         let sideNav;
-        if (this.state.width <= 600){
+        if (this.state.width <= 768){
             sideNav = <SideNavClose />
         } else {
             sideNav = <SideNavOpen />

@@ -32,34 +32,44 @@ class SideNav extends Component {
             <div id="mySidenav" className="mysidenav">
                 <h4 className="fa fa-meetup" style={{fontSize: "26px", marginLeft: "70px", marginTop: "15px", color: "white"}}>Logo</h4>
                 <ul style={{marginTop: "40px"}} id="parentNavDiv">
-                    <li className="fa fa-dashboard active" onClick={(e)=>{this.renderComponent('Dashboard')}}>
+                    <li onClick={(e)=>{this.renderComponent('Dashboard')}}>
+                        <span className="fa fa-dashboard active"></span>
                         <a id="Dashboard">Dashboard </a>
                     </li> 
-                    <li className="fa fa-table" onClick={(e)=>{this.renderComponent('Table')}}>
+                    <li onClick={(e)=>{this.renderComponent('Table')}}>
+                        <span className="fa fa-table"></span>
                         <a id="Table">Tables </a>
                     </li>
-                    <li className="fa fa-user" onClick={(e)=>{this.renderComponent('Profile')}}>
+                    <li onClick={(e)=>{this.renderComponent('Profile')}}>
+                        <span className="fa fa-user"></span>
                         <a id="Profile">Profile</a>
                     </li>
-                    <li className="fa fa-bar-chart" onClick={(e)=>{this.renderComponent('Graph')}}>
+                    <li onClick={(e)=>{this.renderComponent('Graph')}}>
+                        <span className="fa fa-bar-chart"></span>
                         <a id="Graph">Charts</a>
                     </li>
-                    <li className="fa fa-check-square-o" onClick={(e)=>{this.renderComponent('Forms')}}>
-                        <a id="Forms">Forms</a>
+                    <li onClick={(e)=>{this.renderComponent('Forms')}}>
+                        <span className="fa fa-check-square-o"></span>
+                        <a id="Forms">Forms/Dropdowns</a>
                     </li>
-                    <li className="fa fa-clone" onClick={(e)=>{this.renderComponent('Panels')}}>
+                    <li onClick={(e)=>{this.renderComponent('Panels')}}>
+                        <span className="fa fa-clone"></span>
                         <a id="Panels">Panels</a>
                     </li>
-                    <li className="fa fa-comments" onClick={(e)=>{this.renderComponent('Messages')}}>
-                        <a id="Messages">Messages</a>
+                    <li onClick={(e)=>{this.renderComponent('Messages')}}>
+                        <span className="fa fa-comments"></span>
+                        <a id="Messages">Messages/Alerts</a>
                     </li>
-                    <li className="fa fa-caret-square-o-down" onClick={(e)=>{this.renderComponent('Manu')}}>
+                    <li onClick={(e)=>{this.renderComponent('Manu')}}>
+                        <span className="fa fa-caret-square-o-down"></span>
                         <a id="Manu">Manu</a>
                     </li>
-                    <li className="fa fa-commenting" onClick={(e)=>{this.renderComponent('Overlay')}}>
+                    <li onClick={(e)=>{this.renderComponent('Overlay')}}>
+                        <span className="fa fa-commenting"></span>
                         <a id="Overlay">Overlay</a>
                     </li>
-                    <li className="fa fa-picture-o" onClick={(e)=>{this.renderComponent('Media')}}>
+                    <li onClick={(e)=>{this.renderComponent('Media')}}>
+                        <span className="fa fa-picture-o"></span>
                         <a id="Media">Media</a>
                     </li>
                 </ul>

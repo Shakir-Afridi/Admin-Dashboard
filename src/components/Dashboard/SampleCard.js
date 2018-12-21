@@ -12,10 +12,10 @@ class SampleCard extends Component {
     render(){
         const { icon, text, statusLabel, status, buttonName } = this.props;
         return (
-                <div>
+                <div style={{height: "170px"}}>
                     <div className="row">
                         <div className="col-md-2" style={{textAlign: 'center'}}>
-                            <img src={icon} alt="logo" style={{width: '100%', height: "50%"}}/>
+                            <img src={icon} alt="logo" style={{width: '50px', height: "50px"}}/>
                         </div>
                         <div className="col-md-10">
                             <h4>{text}</h4>

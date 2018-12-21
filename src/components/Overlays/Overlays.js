@@ -19,14 +19,14 @@ class OverLay extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    {/* <div className="col-md-4">
                         <div className="panel panel-default">
                             <div className="panel-body">
                                 <h4>Panel Overlay Using Primereact UI components</h4>
                                 <PanelOverlay />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="col-md-4">
                         <div className="panel panel-default">
                             <div className="panel-body">

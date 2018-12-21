@@ -17,7 +17,7 @@ class Header extends Component {
                         <span style={{fontFamily: "verdana"}}>{logo}</span>
                     </p>
                     <div id="SideNavBars" className="fa fa-bars" style={{marginTop: "14px", marginLeft: "100px", color: "white"}}></div>
-                    <a className="bars" style={{color: 'white'}}><span style={{fontSize: "26px", marginTop: "16px"}} id="bars" className="fa fa-bars" aria-hidden="true"></span></a>
+                        <a className="bars" style={{color: 'white'}}><span style={{fontSize: "26px", marginTop: "16px"}} id="bars" className="fa fa-bars" aria-hidden="true"></span></a>
                     <div className="logoutBtn"> 
                         <div className="fa fa-sign-out logout" onClick={this.logout}>
                             <span style={{fontFamily: "verdana", marginRight: "15px"}}>Logout</span>

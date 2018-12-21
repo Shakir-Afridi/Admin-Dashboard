@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Messages from './BootstrapMsg';
 
 class Message extends Component {
     constructor(props){
@@ -11,7 +12,7 @@ class Message extends Component {
         return(
             <div className="panel panel-default">
                 <div className="panel-body">
-                Some Messages
+                    <Messages />
                 </div>
             </div>
         )

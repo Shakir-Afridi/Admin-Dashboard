@@ -1,5 +1,72 @@
 body{
-    background-color: #eee !important; 
+    background-color: #D5D8DC !important; 
+  }
+
+  .login-page {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    margin: 0 auto !important;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .signIn-text {
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto !important;
+    background-color: #28343a;
+    color: #fff;
+  }
+  .login_inputs {
+    padding-top: 50px;
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+    text-align: center;
+  }
+  .sigin-btn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #1f3944;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 100%;
+  }
+  .social-media-icons {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .social-media-icons img {
+    opacity: 0.7;
+    position: relative;
+  }
+  .social-media-icons div div img {
+    display: inline;
+    padding-left: 5px;
+  }
+  .social-media-icons img:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .sign-up-btn {
+    padding-top: 50px;
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+    text-align: center;
+  }
+  .sign-up-btn div {
+    padding-top: 40px;
+  }
+  .sign-up-btn div a {
+    font-size: 16px;
+    cursor: pointer;
   }
 
   /* Header styling */
@@ -53,17 +120,33 @@ body{
     display: block;
 }
 
+.mysidenav ul li span {
+  width: 5%;
+  font-size: 26px !important;
+  transition: opacity 1s ease-out;
+  opacity: 1;
+}
+
+#SideNavClose ul li span {
+  width: 5%;
+  font-size: 26px !important;
+  transition: opacity 1s ease-out;
+  opacity: 1;
+}
+
 #SideNavClose ul li{
-  padding: 8px 8px 8px 12px;
   margin-left: -40px;
   text-decoration: none;
   font-size: 16px;
-  align-content: flex-start;
-  transition: margin-left .5s;
   cursor: pointer;
   color: #ffffff !important;
   line-height: 120%;
   display: block;
+  padding: 8px 8px 8px 18px;
+  opacity: 0;
+  font-size: 18px;
+  visibility: hidden;
+  transition: opacity 0.6s, visibility 0.6s, margin-left .5s;
 }
 
 .myCard {
@@ -72,14 +155,14 @@ body{
   /* transition: all .2s ease-in-out; */
 }
 
-.myCard:hover {
-  /* transform: scale(1.05);
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
-}
+/* .myCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
 
 .mysidenav ul li a, #SideNavClose ul li a {
   color: #fff;
-  padding-left: 26px;
+  padding-left: 30px;
   font-family: Verdana;
   text-decoration: none;
 }
@@ -153,17 +236,6 @@ body{
 
 #ChildNavClose span:hover {
     color: #fff;
-}
-
-#SideNavClose ul li {
-  cursor: pointer;
-  padding: 10px 10px 10px 12px;
-  text-decoration: none;
-  opacity: 0;
-  font-size: 18px;
-  visibility: hidden;
-  transition: opacity 0.6s, visibility 0.6s;
-  display: block;
 }
 
 #mainBodyComp {
@@ -294,7 +366,7 @@ body{
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .mysidenav {width: 0px;}
   #mainBodyComp {
       margin-left: 20px;
@@ -311,6 +383,20 @@ body{
   }
   .bars {
     display: inline;
+  }
+  .login-page {
+    width: 85%;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .login_inputs {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+  }
+  .sign-up-btn {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+    padding-top: 10px;
   }
 }
 

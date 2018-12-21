@@ -17,10 +17,10 @@ class SampleCard extends Component {
                         <h2>{companyName}</h2>
                     </div>
                 </div>
-                <div className="row" style={{marginTop: "30px"}}>
+                <div className="row" style={{marginTop: "30px", textAlign: 'center'}}>
                     <div className="col-md-4"></div>
                     <div className="col-md-4">
-                        <img src={logo} alt="logo" style={{width: '100%', height: "50%"}}/>
+                        <img src={logo} alt="logo" style={{marginLeft: '-20px', width: '100px', height: "100px"}}/>
                     </div>
                     <div className="col-md-4"></div>
                 </div>
