@@ -3,7 +3,7 @@
 This project have an Admin dashboard along with some common components. To use these components you just need to copy the .js file in your project where you want to use it. 
 
 # Dashboard Image
-![alt text](https://github.com/Shakir-Afridi/Shakir-Afridi/Admin-Dashboard/blob/master/dashboard.PNG)
+![alt text](https://github.com/Shakir-Afridi/Admin-Dashboard/blob/master/dashboard.PNG)
 # Dependencies
 npm install primereact --save \
 npm install primeicons --save \
