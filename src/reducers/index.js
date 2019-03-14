@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import renderComponent from './compReduser';
+import renderComponent from './compReducer';
 
 const rootReducer = combineReducers({
     renderComponent
